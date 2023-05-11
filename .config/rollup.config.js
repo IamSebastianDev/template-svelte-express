@@ -11,6 +11,7 @@ import json from '@rollup/plugin-json';
 import { terser } from 'rollup-plugin-terser';
 import { rld } from 'rollup-plugin-rld';
 import scss from 'rollup-plugin-scss';
+import pkg from '../package.json' assert { type: 'json' };
 
 export default [
     {
@@ -22,7 +23,7 @@ export default [
                 sourcemap: true,
             },
         ],
-        external: (id) => !/^[./]/.test(id),
+        external: Object.keys(pkg.dependencies || {}),
         plugins: [
             resolve({ preferBuiltins: true }),
             commonjs(),
