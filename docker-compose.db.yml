@@ -1,0 +1,18 @@
+# @format
+
+version: '3.8'
+volumes:
+    surreal-data:
+services:
+    surrealdb:
+        container_name: surrealdb
+        image: surrealdb/surrealdb:latest
+        restart: always
+        ports:
+            - ${DB_PORT}:${DB_PORT}
+        environment:
+            - PASS=${DB_AUTH}
+            - USER=${DB_USER}
+        volumes:
+            - surreal-data:/data/db
+        command: start

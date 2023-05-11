@@ -1,0 +1,39 @@
+# @format
+
+version: '3.8'
+volumes:
+    surreal-data:
+services:
+    surrealdb:
+        container_name: surrealdb
+        image: surrealdb/surrealdb:latest
+        restart: always
+        ports:
+            - ${DB_PORT}:${DB_PORT}
+        environment:
+            - PASS=${DB_AUTH}
+            - USER=${DB_USER}
+        volumes:
+            - surreal-data:/data/db
+        command: start
+    app:
+        build:
+            context: .
+            target: dev
+        environment:
+            - NODE_ENV=development
+            - PORT=3000
+            - DB_CONNECT=surrealdb
+        ports:
+            - ${PORT}:3000
+        working_dir: /root/app
+        volumes:
+            - .:/root/app:chached
+        restart: always
+        command:
+            - /bin/sh
+            - -c
+            - |
+                yarn install
+                yarn build
+                yarn dev & yarn serve
