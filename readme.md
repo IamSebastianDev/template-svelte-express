@@ -8,11 +8,13 @@ This template can be used as a opinionated starting point for a typescript svelt
 
 -   [yarn](https://yarnpkg.com/getting-started)
 -   [TypeScript](https://www.typescriptlang.org)
+-   [SCSS](https://sass-lang.com)
+-   [Svelte](https://svelte.dev)
 -   [Rollup](https://rollupjs.org/guide/en/) as bundler, using esbuild to transpile TypeScript to JavaScript
 -   [ava](https://github.com/avajs/ava) as test-runner
 -   [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) to ensure commit standards
--   [Semantic Release](https://semantic-release.gitbook.io/semantic-release/) to create releases automatically
 -   [Prettier](https://prettier.io) & [Pretty-quick](https://www.npmjs.com/package/pretty-quick) to format the code
+-   [Stylelint](https://stylelint.io) To lint scss
 -   [alex](https://alexjs.com) for linting the documentation
 
 ## Dependencies used in the template
