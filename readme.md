@@ -1,6 +1,6 @@
 <!-- @format -->
 
-# TypeScript Svelte Express SCSS Surrealdb Template
+# TypeScript Svelte Express SCSS Template
 
 This template can be used as a opinionated starting point for a typescript svelte based app. It uses several tools to enhance the dx aspect of creating an application. Read more about how the different aspects of the template in the [`Contributing Guidelines`](./contributing.md).
 
@@ -62,7 +62,6 @@ This template can be used as a opinionated starting point for a typescript svelt
 | dotenv                          | prod | Loads environment variables from a .env file into process.env.                             |
 | express                         | prod | A fast and minimalist web framework for Node.js.                                           |
 | helmet                          | prod | Middleware for securing HTTP headers in Express.js applications.                           |
-| surrealdb.js                    | prod | A JavaScript library for interacting with SurrealDB, a database system.                    |
 
 Note: The table includes both development dependencies (dev) and production dependencies (prod).
 

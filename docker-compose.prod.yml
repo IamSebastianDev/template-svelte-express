@@ -2,11 +2,13 @@
 
 version: '3.8'
 volumes:
-    surreal-data:
+    db-data:
 services:
-    surrealdb:
-        container_name: surrealdb
-        image: surrealdb/surrealdb:latest
+    # delete this if no database is needed
+    database:
+        container_name: database
+        # select the database image
+        image: <database-image>
         restart: always
         ports:
             - ${DB_PORT}:${DB_PORT}
@@ -14,7 +16,7 @@ services:
             - PASS=${DB_AUTH}
             - USER=${DB_USER}
         volumes:
-            - surreal-data:/data/db
+            - db-data:/data/db
         command: start
     app:
         container_name: ${APP_NAME}
@@ -25,6 +27,5 @@ services:
             - DB_PORT=${DB_PORT}
             - DB_USER=${DB_USER}
             - DB_AUTH=${DB_AUTH}
-            - DB_CONNECT=surrealdb
         ports:
             - ${PORT}:3000
