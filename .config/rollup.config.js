@@ -43,21 +43,19 @@ export default [
             name: 'app',
             intro: `window['environment']='${process.env.NODE_ENV || 'development'}'; 
                     window['application_name']='${process.env.APP_NAME}'`,
+            assetFileNames: 'bundle[extname]',
         },
         plugins: [
             commonjs(),
             json(),
             svelte({
                 preprocess: autoPreprocess(),
-                include: './client/src/**/*.svelte',
             }),
             scss({}),
             esbuild(),
             cleanup({ extensions: ['.ts'] }),
             resolve({ browser: true }),
-            rld({
-                url: 'rld',
-            }),
+            rld({ url: 'rld' }),
             process.env.NODE_ENV === 'production' && terser(),
         ],
     },
