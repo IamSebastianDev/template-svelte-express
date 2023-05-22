@@ -5003,10 +5003,10 @@ rollup-plugin-esbuild@^5.0.0:
     joycon "^3.1.1"
     jsonc-parser "^3.2.0"
 
-rollup-plugin-rld@^1.2.0:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-rld/-/rollup-plugin-rld-1.2.1.tgz#027af1eee8a5a199a0606d5fe4c98a6ac46cdac1"
-  integrity sha512-ajfrFhXx/+td/nh/t6RHYyBCbo4sJYe7frnWMd7C6mWlWgkNugusweZyIkRvU0PReWA95yPnNfRch3HvOoNZcg==
+rollup-plugin-rld@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-rld/-/rollup-plugin-rld-1.3.0.tgz#529b0cb6c9227005581778c632d4ffd3a516de70"
+  integrity sha512-gsRLUoaPHTyI844SQ/ttjSEnuDWsxEjrnIfYPRFoK4cSLwv00kTXRSkC4RZRJBELmuTKdtUN8uGn2RxFGwNDaA==
 
 rollup-plugin-scss@4:
   version "4.0.0"
