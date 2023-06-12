@@ -2869,11 +2869,6 @@ isexe@^2.0.0:
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==
 
-isomorphic-ws@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/isomorphic-ws/-/isomorphic-ws-5.0.0.tgz#e5529148912ecb9b451b46ed44d53dae1ce04bbf"
-  integrity sha512-muId7Zzn9ywDsyXgTIafTry2sV3nySZeUDe6YedVd1Hvuuep5AsIlqK+XefWpYTyJG5e503F2xIuT2lcU6rCSw==
-
 istanbul-lib-coverage@^3.0.0, istanbul-lib-coverage@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/istanbul-lib-coverage/-/istanbul-lib-coverage-3.2.0.tgz#189e7909d0a39fa5a3dfad5b03f71947770191d3"
@@ -5560,12 +5555,13 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-surrealdb.js@^0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/surrealdb.js/-/surrealdb.js-0.7.1.tgz#d0e94de947bc4a6fc5bbaf9400bb578e16c3298a"
-  integrity sha512-N9X1rDRqmwY+iRlDbPrNmth6Mi6m0lx3Dc+EsV3bBqTeRVJgIzoKm2TuiR61OFViANUPLxpzI2lNwAzNjn2FAg==
+surrealdb.js@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/surrealdb.js/-/surrealdb.js-0.8.0.tgz#4d4747662fecc476181cdec5cd21d44a325165de"
+  integrity sha512-8IQieP7iBI1gjlvgyRiMxe7KxrQ7ihFhMIZsYTGSTEmS9NKCk/ngV+745hru9duWZnm9q1LSQkKOcZLv8YzJNQ==
   dependencies:
-    isomorphic-ws "^5.0.0"
+    unws "^0.2.3"
+    ws "^8.13.0"
 
 svelte-check@^3.4.3:
   version "3.4.3"
@@ -5988,6 +5984,11 @@ unpipe@1.0.0, unpipe@~1.0.0:
   resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
   integrity sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==
 
+unws@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/unws/-/unws-0.2.3.tgz#c9152a542e3e30f13be006d68caec3f3e2e08856"
+  integrity sha512-59MJAkUoFCncPvNQjwAN9rvaLjKNMDUMEjLZ1Fnor+qI+KoTAXtJnFWYsh0fq8L3eVfrt6dDYhGfgF19t/jpHw==
+
 update-notifier@^6.0.0:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/update-notifier/-/update-notifier-6.0.2.tgz#a6990253dfe6d5a02bd04fbb6a61543f55026b60"
@@ -6207,6 +6208,11 @@ write-file-atomic@^5.0.1:
   dependencies:
     imurmurhash "^0.1.4"
     signal-exit "^4.0.1"
+
+ws@^8.13.0:
+  version "8.13.0"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.13.0.tgz#9a9fb92f93cf41512a0735c8f4dd09b8a1211cd0"
+  integrity sha512-x9vcZYTrFPC7aSIbj7sRCYo7L/Xb8Iy+pW0ng0wt2vCJv7M9HOMy0UoN3rr+IFC7hb7vXoqS+P9ktyLLLhO+LA==
 
 xdg-basedir@^5.0.1, xdg-basedir@^5.1.0:
   version "5.1.0"
