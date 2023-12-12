@@ -5755,13 +5755,14 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-surrealdb.js@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/surrealdb.js/-/surrealdb.js-0.8.0.tgz#4d4747662fecc476181cdec5cd21d44a325165de"
-  integrity sha512-8IQieP7iBI1gjlvgyRiMxe7KxrQ7ihFhMIZsYTGSTEmS9NKCk/ngV+745hru9duWZnm9q1LSQkKOcZLv8YzJNQ==
+surrealdb.js@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/surrealdb.js/-/surrealdb.js-0.11.0.tgz#56957c9be779899c851620b6d75b26c8b803db1c"
+  integrity sha512-x/Qd0UYyNilwY27JZlWgP8NsCdBzDtextRzP9oIm7xO27qsZvE5Rh4wnYN0xD68zgRAE4W8Jsufbm+hKbaGsTg==
   dependencies:
     unws "^0.2.3"
     ws "^8.13.0"
+    zod "^3.22.4"
 
 svelte-check@^3.5.2:
   version "3.5.2"
@@ -6511,6 +6512,11 @@ yocto-queue@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-1.0.0.tgz#7f816433fb2cbc511ec8bf7d263c3b58a1a3c251"
   integrity sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==
+
+zod@^3.22.4:
+  version "3.22.4"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.22.4.tgz#f31c3a9386f61b1f228af56faa9255e845cf3fff"
+  integrity sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==
 
 zwitch@^2.0.0:
   version "2.0.4"
